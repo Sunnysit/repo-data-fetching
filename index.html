@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Repo Data Fetching</title>
 </head>
-<body>
-    <h1>Hello</h1>
 
+<body>
+    <h1>Select search Language</h1>
+    <div> <label for="languages">Language</label>
+    <select name="languages" id="select-language"></select></div>
+    <div>
+        <label for="period">Month period</label>
+        <input type="radio" name="period" value="1" checked>First six months<br>
+        <input type="radio" name="period" value="2">Second six months<br>
+    </div>
+    <button id="fetch-btn">Fetch</button>
+    <div id="output"></div>
+
+    <button id="get-json-btn">Check JSON file</button>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
