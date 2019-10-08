@@ -2,12 +2,13 @@
  * @Author: Sunny Xue
  * @Date: 2019-10-07 22:07:25
  * @Last Modified by: Sunny Xue
- * @Last Modified time: 2019-10-08 16:12:56
+ * @Last Modified time: 2019-10-08 16:27:56
  */
 
 "use strict;"
 $( document ).ready(function() {
 
+//Define language array
 let languages = [
     'Python',
     'Java',
@@ -27,6 +28,7 @@ let languages = [
     'Rust'
 ];
 
+//Get HTML document
 const outputHTML = document.getElementById('output');
 const selectLanguage = document.getElementById('select-language');
 const fetchBtn = document.getElementById('fetch-btn');
@@ -38,7 +40,6 @@ languages.map(lang=>{
 })
 
 selectLanguage.innerHTML=selectOptions;
-
 
 const timePromise = (languageName,i,searchYear,searchStartMonth,searchStartDay,searchEndMonth,searchEndDay,selectPeriod) =>{
     return new Promise(resolve =>  setTimeout(() => {
@@ -83,14 +84,16 @@ const timePromise = (languageName,i,searchYear,searchStartMonth,searchStartDay,s
 const fetchSingleLanguage= (lang,selectPeriod) =>{
 
     let languageName = lang.toLowerCase();
+    
     //Init search query date
-  
+    //Get the first six months
     let searchStartYear = 2015;
     let searchStartMonth = '01';
     let searchEndMonth = '06';
     let searchStartDay = '01';
     let searchEndDay = '30';
     
+    //Get the second six months
     if(selectPeriod!==1){
         searchStartMonth = '07';
         searchEndMonth ='12';
@@ -109,7 +112,7 @@ const fetchSingleLanguage= (lang,selectPeriod) =>{
             outputData.push(data);
             if(i===4)
             {
-                
+                //Finish fetching and send it back to the page as JSON string.
                 let jsonData = {languageName,
                 data:outputData};
                 console.log(jsonData);
@@ -122,8 +125,6 @@ const fetchSingleLanguage= (lang,selectPeriod) =>{
 
 };
 
-
-// fetchSingleLanguage('Python');
 
 fetchBtn.addEventListener('click',(e)=>{
     
