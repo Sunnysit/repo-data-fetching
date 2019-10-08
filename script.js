@@ -2,7 +2,7 @@
  * @Author: Sunny Xue
  * @Date: 2019-10-07 22:07:25
  * @Last Modified by: Sunny Xue
- * @Last Modified time: 2019-10-08 13:08:25
+ * @Last Modified time: 2019-10-08 16:12:56
  */
 
 "use strict;"
@@ -40,11 +40,12 @@ languages.map(lang=>{
 selectLanguage.innerHTML=selectOptions;
 
 
-const timePromise = (languageName,i,searchYear,searchStartMonth,searchStartDay,searchEndMonth,searchEndDay) =>{
+const timePromise = (languageName,i,searchYear,searchStartMonth,searchStartDay,searchEndMonth,searchEndDay,selectPeriod) =>{
     return new Promise(resolve =>  setTimeout(() => {
         
         let startDate = `${searchYear+i}-${searchStartMonth}-${searchStartDay}`;
         let endDate = `${searchYear+i}-${searchEndMonth}-${searchEndDay}`;
+
         let url =
         `https://api.github.com/search/repositories?q=language%3A${languageName}+created%3A${startDate}..${endDate}`; 
         fetch(url)
@@ -55,7 +56,7 @@ const timePromise = (languageName,i,searchYear,searchStartMonth,searchStartDay,s
                 startDate,
                 endDate,
                 searchYear:searchYear+i,
-                timePeriod:1,
+                timePeriod:parseInt(selectPeriod),
                 repoCount: data.total_count
             }
         // resolve(`${languageName} ${startDate}..${endDate}:${data.total_count}`);
@@ -101,7 +102,7 @@ const fetchSingleLanguage= (lang,selectPeriod) =>{
     //Loop for last 5 year
     for (let i = 0; i < 5; i++) {
 
-       timePromise(languageName,i,searchStartYear,searchStartMonth,searchStartDay,searchEndMonth,searchEndDay)
+       timePromise(languageName,i,searchStartYear,searchStartMonth,searchStartDay,searchEndMonth,searchEndDay,selectPeriod)
         .then(data=>{
             console.log('Fetching..'+data.repoCount);
             outputHTML.innerHTML += `<p>Find ${data.repoCount} in ${data.startDate} to ${data.endDate}</p>`;
@@ -134,7 +135,7 @@ fetchBtn.addEventListener('click',(e)=>{
 })
 
 getJSONBtn.addEventListener('click',(e)=>{
-    $.getJSON("./data.json", function(json){
+    $.getJSON("./language-data.json", function(json){
         console.log(json);
       });
 });
