@@ -2,7 +2,7 @@
  * @Author: Sunny Xue
  * @Date: 2019-10-07 22:07:25
  * @Last Modified by: Sunny Xue
- * @Last Modified time: 2019-10-08 16:27:56
+ * @Last Modified time: 2019-10-09 22:29:38
  */
 
 "use strict;"
@@ -13,7 +13,7 @@ let languages = [
     'Python',
     'Java',
     'Javascript',
-    'C#',
+    'C%23',
     'PHP',
     'C++',
     'R',
@@ -23,7 +23,7 @@ let languages = [
     'TypeScript',
     'Kotlin',
     'Ruby',
-    'VBA',
+    'Visual-Basic',
     'Go',
     'Rust'
 ];
@@ -94,7 +94,7 @@ const fetchSingleLanguage= (lang,selectPeriod) =>{
     let searchEndDay = '30';
     
     //Get the second six months
-    if(selectPeriod!==1){
+    if(selectPeriod!="1"){
         searchStartMonth = '07';
         searchEndMonth ='12';
         searchStartDay = '01';

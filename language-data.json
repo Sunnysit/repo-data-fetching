@@ -202,61 +202,61 @@
                 "endDate": "2015-06-30",
                 "searchYear": 2015,
                 "timePeriod": 1,
-                "repoCount": 1248204
+                "repoCount": 81314
             }, {
                 "startDate": "2016-01-01",
                 "endDate": "2016-06-30",
                 "searchYear": 2016,
                 "timePeriod": 1,
-                "repoCount": 1248204
+                "repoCount": 116727
             }, {
                 "startDate": "2017-01-01",
                 "endDate": "2017-06-30",
                 "searchYear": 2017,
                 "timePeriod": 1,
-                "repoCount": 1248204
+                "repoCount": 174057
             }, {
                 "startDate": "2018-01-01",
                 "endDate": "2018-06-30",
                 "searchYear": 2018,
                 "timePeriod": 1,
-                "repoCount": 1248204
+                "repoCount": 240047
             }, {
                 "startDate": "2019-01-01",
                 "endDate": "2019-06-30",
                 "searchYear": 2019,
                 "timePeriod": 1,
-                "repoCount": 1248204
+                "repoCount": 265207
             }, {
                 "startDate": "2015-07-01",
                 "endDate": "2015-12-31",
                 "searchYear": 2015,
                 "timePeriod": 2,
-                "repoCount": 1248279
+                "repoCount": 90408
             }, {
                 "startDate": "2016-07-01",
                 "endDate": "2016-12-31",
                 "searchYear": 2016,
                 "timePeriod": 2,
-                "repoCount": 1248279
+                "repoCount": 132525
             }, {
                 "startDate": "2017-07-01",
                 "endDate": "2017-12-31",
                 "searchYear": 2017,
                 "timePeriod": 2,
-                "repoCount": 1248279
+                "repoCount": 192375
             }, {
                 "startDate": "2018-07-01",
                 "endDate": "2018-12-31",
                 "searchYear": 2018,
                 "timePeriod": 2,
-                "repoCount": 1248279
+                "repoCount": 241003
             }, {
                 "startDate": "2019-07-01",
                 "endDate": "2019-12-31",
                 "searchYear": 2019,
                 "timePeriod": 2,
-                "repoCount": 1248279
+                "repoCount": 152954
             }
         ]
     }, {
@@ -845,68 +845,68 @@
             }
         ]
     }, {
-        "languageName": "vba",
+        "languageName": "visual-basic",
         "data": [
             {
                 "startDate": "2015-01-01",
                 "endDate": "2015-06-30",
                 "searchYear": 2015,
                 "timePeriod": 1,
-                "repoCount": 2641083
+                "repoCount": 3596
             }, {
                 "startDate": "2016-01-01",
                 "endDate": "2016-06-30",
                 "searchYear": 2016,
                 "timePeriod": 1,
-                "repoCount": 3960386
+                "repoCount": 4468
             }, {
                 "startDate": "2017-01-01",
                 "endDate": "2017-06-30",
                 "searchYear": 2017,
                 "timePeriod": 1,
-                "repoCount": 5783437
+                "repoCount": 5916
             }, {
                 "startDate": "2018-01-01",
                 "endDate": "2018-06-30",
                 "searchYear": 2018,
                 "timePeriod": 1,
-                "repoCount": 7350274
+                "repoCount": 6673
             }, {
                 "startDate": "2019-01-01",
                 "endDate": "2019-06-30",
                 "searchYear": 2019,
                 "timePeriod": 1,
-                "repoCount": 8794672
+                "repoCount": 7306
             }, {
                 "startDate": "2015-07-01",
                 "endDate": "2015-12-31",
                 "searchYear": 2015,
                 "timePeriod": 2,
-                "repoCount": 3034431
+                "repoCount": 4025
             }, {
                 "startDate": "2016-07-01",
                 "endDate": "2016-12-31",
                 "searchYear": 2016,
                 "timePeriod": 2,
-                "repoCount": 4670586
+                "repoCount": 4891
             }, {
                 "startDate": "2017-07-01",
                 "endDate": "2017-12-31",
                 "searchYear": 2017,
                 "timePeriod": 2,
-                "repoCount": 6405206
+                "repoCount": 5766
             }, {
                 "startDate": "2018-07-01",
                 "endDate": "2018-12-31",
                 "searchYear": 2018,
                 "timePeriod": 2,
-                "repoCount": 8168152
+                "repoCount": 6526
             }, {
                 "startDate": "2019-07-01",
                 "endDate": "2019-12-31",
                 "searchYear": 2019,
                 "timePeriod": 2,
-                "repoCount": 5864599
+                "repoCount": 4049
             }
         ]
     }, {
